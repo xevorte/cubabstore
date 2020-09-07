@@ -1,0 +1,734 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("font/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsM";
+  src: url("font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsB";
+  src: url("font/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratL";
+  src: url("font/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratM";
+  src: url("font/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratB";
+  src: url("font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("font/Lora/static/Lora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LoraM";
+  src: url("font/Lora/static/Lora-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LoraB";
+  src: url("font/Lora/static/Lora-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #171717;
+  border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 20px;
+  font-weight: 200;
+  font-family: "MontserratM";
+}
+
+.nav-item.active a {
+  color: #0080ff !important;
+}
+
+.nav-link span {
+  color: #00ff66;
+  font-family: "MontserratB";
+}
+
+.login {
+  font-family: "PoppinsM";
+  border: 2px solid #0080ff;
+  color: white;
+  transition: 0.1s;
+}
+
+.login:hover {
+  background-color: #0080ff;
+  color: white;
+}
+
+.login-page {
+  box-shadow: 0 0 5px rgb(70, 70, 70);
+  width: 60%;
+}
+
+/* Carousel */
+
+.carousel {
+  height: 450px;
+  background-color: #171717;
+  color: white;
+}
+
+.xx {
+  padding-top: 60px;
+  margin-right: 30px;
+}
+
+.carousel h1 {
+  font-family: "LoraB";
+  font-weight: 600;
+}
+
+.carousel p {
+  font-weight: 300;
+}
+
+.carousel-item img {
+  box-shadow: 0 0 5px rgb(150, 150, 150);
+}
+
+.gin {
+  font-family: "MontserratB";
+  color: white;
+  width: 55%;
+  background-color: #f9b234;
+}
+
+.gin:hover {
+  color: white;
+}
+
+.pd {
+  font-family: "MontserratM";
+  color: white;
+  background: #0080ff;
+  border-radius: 2px;
+  z-index: 9999;
+  margin-top: -25px;
+  box-shadow: 0 0 2px black;
+}
+
+.pd:hover {
+  color: white;
+}
+
+/* Features */
+
+.features h3,
+.designer h3,
+.similar-product h3,
+.cart-header h3,
+.checkout-success h3,
+.category h3,
+.designers h3 {
+  font-family: "LoraB";
+  color: #f9b234;
+}
+
+.features h5,
+.designer h5 {
+  font-family: "MontserratM";
+}
+
+.features p,
+.designer p,
+footer p,
+.similar-product p,
+.cart-header p,
+.checkout-success p,
+.category p,
+.designers p {
+  font-weight: 300;
+  color: #a5a5a5;
+}
+
+.features .figure:hover h5 {
+  transition: 0.3s;
+  color: #0080ff;
+}
+
+.features .figure:hover p {
+  transition: 0.3s;
+  color: #171717;
+}
+
+.features .figure-img {
+  position: relative;
+}
+
+.features .figure-img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  transition: opacity 0.3s;
+}
+
+.features .figure:hover .figure-img a {
+  opacity: 1;
+}
+
+.features .figure h5 {
+  color: #171717;
+}
+
+/* Designers */
+
+.designer-img {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 100px;
+  padding: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.figure:hover .designer-img {
+  box-shadow: 0 0 7px black;
+}
+
+.designez-img {
+  position: relative;
+}
+
+.bdg1 {
+  position: absolute;
+  top: 80px;
+  right: 14%;
+}
+
+.bdg2 {
+  position: absolute;
+  top: 80px;
+  right: 7%;
+}
+
+.sod {
+  background-color: #60aefc;
+  margin-top: 20px;
+  color: white;
+  font-family: "PoppinsM";
+}
+
+.sod:hover {
+  background-color: #0080ff;
+  color: white;
+}
+
+/* Footer */
+
+.logo {
+  float: left;
+}
+
+.futer {
+  position: absolute;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.links {
+  font-family: Poppins;
+}
+
+.links a {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.links-page {
+  margin-left: 140px;
+}
+
+.ph {
+  font-size: 13px;
+  font-family: Poppins;
+  width: 116%;
+}
+
+.dg {
+  background-color: rgb(105, 159, 253);
+  color: white;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.dg:hover {
+  background-color: #005fff;
+  color: white;
+}
+
+.fbb {
+  box-shadow: 0 0 5px rgb(160, 160, 160);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.waa {
+  box-shadow: 0 0 5px rgb(160, 160, 160);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.igg {
+  box-shadow: 0 0 5px rgb(160, 160, 160);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.fbb:hover {
+  background-color: royalblue;
+  transition: 0.1s;
+}
+
+.fbb:active {
+  box-shadow: 0 0 1px black;
+}
+
+.waa:hover {
+  background-color: greenyellow;
+  transition: 0.2s;
+}
+
+.waa:active {
+  box-shadow: 0 0 1px black;
+}
+
+.igg:hover {
+  background-image: radial-gradient(circle farthest-side at top right,
+      orange,
+      purple);
+  transition: 0.1s;
+}
+
+.igg:active {
+  box-shadow: 0 0 1px black;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-container {
+  margin-top: 100px;
+}
+
+.cart-breadcrumb {
+  margin-top: 50px;
+}
+
+.product-thumbnail {
+  background-color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  max-width: 370px;
+  padding: 8px;
+  margin: auto;
+  transform: translateY(-50px);
+}
+
+.product-thumbnail a:hover {
+  text-decoration: none;
+}
+
+.btn-product {
+  margin: 50px 0 33px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.btn-product .btn {
+  display: block;
+  height: 50px;
+  padding-top: 13px;
+}
+
+.designed-by h5 {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+.designed-by h4 {
+  font-family: "MontserratM";
+  margin-top: 1px;
+  font-size: 18px;
+  color: #171717;
+}
+
+.designed-by P {
+  font-size: 14px;
+  color: #b7b7b7;
+}
+
+/* Single Product */
+
+.single-product h3 {
+  font-family: "MontserratM";
+}
+
+.single-product .harga {
+  font-size: 22px;
+}
+
+.single-product .quantity {
+  font-family: "PoppinsM";
+}
+
+.single-product .designer {
+  width: 50px;
+}
+
+/* Product Description */
+
+.product-description {
+  background-color: #f6f7fb;
+  height: 340px;
+  padding: 40px 20px 0 20px;
+}
+
+.product-description .tab-content {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-top: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.product-description .nav-item {
+  font-family: "MontserratM";
+}
+
+.tab-content p {
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #868686;
+  line-height: 28px;
+}
+
+.product-review,
+.product-desc {
+  height: 340px;
+  overflow-y: scroll;
+}
+
+.product-review h5 {
+  font-size: 18px;
+  font-family: "PoppinsM";
+  margin-bottom: 5px;
+}
+
+.product-review p {
+  font-size: 14px !important;
+}
+
+.comment-img {
+  width: 60px;
+}
+
+/* Info Product */
+
+.info-product .title,
+.ongkos-kirim .title {
+  font-size: 22px;
+  font-family: "MontserratM";
+  margin-bottom: 20px;
+}
+
+.info-product-part {
+  border-right: 1px solid #c7c7c7;
+}
+
+/* Similar Product */
+
+.similar-product {
+  margin-top: 210px;
+  margin-bottom: 100px;
+}
+
+.similar-product .figure,
+.similar-product .card {
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.similar-product .figure:hover,
+.similar-product .card:hover {
+  box-shadow: 0 0 4px rgb(160, 160, 160);
+}
+
+.similar-product h4 {
+  font-family: "PoppinsM";
+  color: black;
+  text-align: start;
+}
+
+.similar-product p {
+  font-size: 16px;
+  text-align: start;
+}
+
+.cart-breadcrumb {
+  margin-left: -16px;
+}
+
+/* Category Page */
+
+.category .figure {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category h4 {
+  font-family: "MontserratB";
+}
+
+/* Designers Page */
+
+.designers {
+  margin: 120px auto;
+}
+
+.designers-profile {
+  display: flex;
+  overflow: hidden;
+}
+
+.designers-img {
+  overflow: hidden;
+  border: 2px solid royalblue;
+}
+
+.designers-profile .profile {
+  cursor: pointer;
+  background-color: rgba(65, 105, 225, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: ease 0.3s;
+}
+
+.designers-profile:hover .profile {
+  opacity: 1;
+}
+
+.designers-profile .profile h6 {
+  margin: 0;
+  margin-left: -700px;
+  text-align: center;
+  font-family: "PoppinsM";
+  font-size: 18px;
+  border: 2px solid white;
+  background-color: royalblue;
+  width: 80%;
+  transition: ease 1s;
+}
+
+.designers-profile .profile p {
+  margin: 0;
+  margin-left: -7000px;
+  text-align: center;
+  background-color: royalblue;
+  font-family: "Poppins";
+  font-size: 15px;
+  width: 80%;
+  transition: ease 1.4s;
+}
+
+.designers-profile:hover h6,
+.designers-profile:hover p,
+.designers-profile:hover .sosmed-ic {
+  margin: 0;
+}
+
+.designers-profile .sosmed {
+  padding: 20px;
+  padding-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.designers-profile .sosmed-ic {
+  margin-bottom: -700px;
+  transition: ease 2s;
+}
+
+/* Checkout Page */
+.checkout-detail {
+  background-color: #f6f7fb;
+  border: 1px solid #eaeaea;
+  color: #171717;
+  font-family: "Montserrat";
+}
+
+.checkout-success {
+  width: 97.5%;
+}
+
+@media (max-width: 1200px) {
+  .links-page {
+    margin-left: 170px;
+  }
+}
+
+@media (max-width: 990px) {
+  .xx {
+    margin-right: 0;
+  }
+
+  .our-designer {
+    text-align: center;
+  }
+
+  .zx {
+    margin-bottom: 20px;
+  }
+
+  .logox {
+    margin-left: 0;
+  }
+
+  .futer {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .logo {
+    float: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .links-page {
+    margin-left: 0;
+  }
+
+  .video {
+    margin-left: 0;
+  }
+
+  .ph {
+    width: 100%;
+  }
+
+  .comment {
+    margin-left: -30px;
+  }
+
+  .designers-profile .sosmed-ic h5 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    width: 90%;
+  }
+
+  .smt {
+    margin-top: -20px;
+  }
+
+  .xx {
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .carousel {
+    height: 720px;
+  }
+
+  .single-product,
+  .breadcrumb,
+  .checkout {
+    margin: 0 20px 0 20px;
+  }
+
+  .similar-product {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .comment {
+    margin-left: 0;
+  }
+
+  .cart-header {
+    margin-bottom: 20px;
+  }
+
+  .cart-breadcrumb {
+    margin-left: 7px;
+  }
+
+  .form-address {
+    margin-left: -18px;
+    padding: 0 20px 0 20px;
+  }
+
+  .checkout-success {
+    margin-left: 7px;
+  }
+}
+
+@media (max-width: 560px) {
+  .login-page {
+    margin-left: 25px;
+  }
+
+  .comment-img {
+    margin-top: 14px;
+  }
+}
